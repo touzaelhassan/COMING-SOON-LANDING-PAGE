@@ -1,0 +1,112 @@
+/* Start General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 1000px;
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+}
+/* End General Styles */
+
+/* Start Header Section */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.header__brand {
+  display: inline-block;
+  border-bottom: 2px solid gray;
+  padding-bottom: 1rem;
+}
+
+.brand__slogan {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.header__text {
+  margin: 3rem 0;
+}
+
+.header__title {
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+.header__description {
+  margin: auto;
+  width: 90%;
+  margin-top: 1rem;
+  color: #ccc;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.header__countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.countdown__item {
+  margin: 0 1.5rem;
+}
+
+.countdown__item .number {
+  color: gold;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.countdown__item .letter {
+  color: #fff;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header__title {
+    font-size: 4.5rem;
+    font-weight: bold;
+  }
+  .header__description {
+    margin: auto;
+    margin-top: 1.3rem;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__description {
+    width: 55%;
+  }
+
+  .countdown__item {
+    margin: 0 2rem;
+  }
+
+  .countdown__item .number {
+    font-size: 4rem;
+  }
+}
+/* End Header Section */
