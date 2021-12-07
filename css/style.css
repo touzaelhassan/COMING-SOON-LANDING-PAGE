@@ -1,3 +1,9 @@
+/* Start Variables */
+
+:root {
+  --primary-color: gold;
+}
+
 /* Start General Styles */
 * {
   margin: 0;
@@ -15,6 +21,14 @@ body {
   font-family: 'Cairo', sans-serif;
 }
 
+input {
+  outline: none;
+}
+
+::placeholder {
+  color: #ddd;
+}
+
 .container {
   margin: auto;
   width: 90%;
@@ -23,6 +37,7 @@ body {
 
 /* Start Header Section */
 .header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +90,7 @@ body {
 }
 
 .countdown__item .number {
-  color: gold;
+  color: var(--primary-color);
   font-size: 3rem;
   font-weight: bold;
 }
@@ -83,6 +98,36 @@ body {
 .countdown__item .letter {
   color: #fff;
   font-size: 2rem;
+}
+
+.email-box {
+  position: absolute;
+  bottom: -25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #eee;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.email__input input {
+  width: 300px;
+  border: 0;
+  padding: 7px 5px;
+  padding-right: 12px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.email__icon {
+  padding: 5px 15px;
+  background-color: var(--primary-color);
+}
+
+.email__icon img {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -96,6 +141,7 @@ body {
     width: 70%;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .header__description {
     width: 55%;
