@@ -109,7 +109,6 @@ input {
   align-items: center;
   border: 2px solid #eee;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .email__input input {
@@ -121,12 +120,21 @@ input {
   letter-spacing: 1px;
 }
 
-.email__icon {
+.invalid-feedback {
+  top: 12px;
+  position: relative;
+  margin-bottom: -20px;
+  font-size: 16px;
+  text-align: start;
+}
+
+.email__button {
+  border: none;
   padding: 5px 15px;
   background-color: var(--primary-color);
 }
 
-.email__icon img {
+.email__button img {
   width: 100%;
 }
 
@@ -243,6 +251,12 @@ input {
 .footer__form {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer__form .invalid-feedback {
+  width: 100%;
+  text-align: center;
 }
 
 .footer__input {

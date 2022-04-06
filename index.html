@@ -68,14 +68,15 @@
           </div>
         </div>
       </div>
-      <div class="email-box">
+      <form class="email-box needs-validation" novalidate>
         <div class="email__input">
-          <input type="text" placeholder="البريد الإلكتروني ..." />
+          <input type="email" placeholder="البريد الإلكتروني ..." required />
+          <div class="invalid-feedback">الرجاء إدخال البريد الإلكتروني</div>
         </div>
-        <div class="email__icon">
+        <button class="email__button">
           <img src="./images/send1.png" alt="send" />
-        </div>
-      </div>
+        </button>
+      </form>
     </header>
     <!-- End Header Section -->
 
@@ -171,15 +172,17 @@
           <h3 class="footer__top__title">
             قم بإضافة بريدك الإلكتروني ليصل الإشعار فور الإنطلاق
           </h3>
-          <form class="footer__form">
+          <form class="footer__form needs-validation" novalidate>
             <input
               type="email"
               class="footer__input"
               placeholder="البريد الإلكتروني"
+              required
             />
             <button class="footer__btn">
               <img src="./images/send2.png" alt="send 2" />
             </button>
+            <div class="invalid-feedback">الرجاء إدخال البريد الإلكتروني</div>
           </form>
         </div>
         <div class="footer__bottom">
