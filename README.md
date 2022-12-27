@@ -1,2 +1,2 @@
 # COMING SOON
-### Website : https://planding-page.netlify.app/
+### Website : https://coming-soon-project.netlify.app/
